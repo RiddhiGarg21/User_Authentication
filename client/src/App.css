@@ -1,0 +1,111 @@
+/* Input Component */
+
+.input-box{
+    width:100%;
+    position:relative;
+    margin:18px 0;
+}
+
+.input-box input{
+
+    width:100%;
+    padding:14px 45px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.18);
+
+    color:white;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+.input-box input::placeholder{
+
+    color:#e5e5e5;
+}
+
+.input-box input:focus{
+
+    background:rgba(255,255,255,.25);
+}
+
+.input-icon{
+
+    position:absolute;
+
+    left:15px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:white;
+
+    font-size:18px;
+}
+
+.password-toggle{
+
+    position:absolute;
+
+    right:15px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+}
+
+/* Glass Card Animation */
+
+.register-card,
+.login-card,
+.verify-card,
+.dashboard-card{
+
+    animation:fadeIn .7s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Buttons */
+
+button{
+
+    transition:.3s;
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+}
